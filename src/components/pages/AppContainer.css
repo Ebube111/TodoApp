@@ -1,0 +1,44 @@
+.main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.bg-image-style {
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px;
+    height: 50vh;
+    margin-top: 3rem;
+
+  }
+  
+.side-text {
+    margin-right: 4rem;
+    font-size: 3rem;
+    /* font-family: 'Akaya Telivigala', cursive; */
+}
+
+@media screen and (max-width: 650px) {
+    .side-text {
+        /* display: flex-end; */
+        font-size: 22px;
+        margin: 0;
+    }
+    .bg-image-style {
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+    }
+    .main-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+}
